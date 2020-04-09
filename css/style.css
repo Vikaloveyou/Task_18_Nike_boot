@@ -110,6 +110,7 @@ input[type="radio"] {
     font-size: 24px;
     line-height: 26px;
     letter-spacing: 0.48px;
+    margin-top: 10px;
 }
 
 .description__boot {
@@ -121,12 +122,15 @@ input[type="radio"] {
 
 .form__boot__block {
     margin-left: 80px;
+    display: flex;
+
 }
 
-.checkboxes {
+.checkboxes__stars {
     display: flex;
     position: relative;
     margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .gold__star__image {
@@ -185,6 +189,35 @@ input[type="checkbox"] {
 
 #five__stars:checked + .checkbox__label::after {
     visibility: visible;
+}
+
+select {
+    background: transparent;
+    color:#e6e6e6;
+    width: 69px;
+    height: 32px;
+    font-size: 16px;
+    padding: 2px 0 5px 10px; 
+    font-weight: 300;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+option {
+    background: #202837;
+}
+
+.size__quantity {
+    margin-bottom: 40px;
+}
+
+input[type="submit"] {
+    width: 184px;
+    height: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: #60656c;
+    color: #e6e6e6;
 }
 
 

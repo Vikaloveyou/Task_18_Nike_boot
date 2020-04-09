@@ -46,14 +46,14 @@
             <h1 class="name__boot">Nike SB Stefan <br> Janoski Max</h1>
             <p class="description__boot">Unisex Skateboarding Shoe</p>
 
-            <div class="checkboxes">
-              <input type="checkbox" name="star" id="one__star">
+            <div class="checkboxes__stars">
+              <input type="checkbox" name="star" id="one__star" checked>
               <label for="one__star" class="checkbox__label"></label>
 
-              <input type="checkbox" name="star" id="two__stars">
+              <input type="checkbox" name="star" id="two__stars" checked>
               <label for="two__stars" class="checkbox__label"></label>
 
-              <input type="checkbox" name="star" id="three__stars">
+              <input type="checkbox" name="star" id="three__stars" checked>
               <label for="three__stars" class="checkbox__label"></label>
 
               <input type="checkbox" name="star" id="four__stars">
@@ -62,6 +62,22 @@
               <input type="checkbox" name="star" id="five__stars">
               <label for="five__stars" class="checkbox__label"></label>
             </div>
+
+            <div class="size__quantity">
+              <select name="size" class="boot__size">
+                <option value="Size">Size</option>
+                <option value="6.5">6.5</option>
+                <option value="8.0">8.0</option>
+              </select>
+
+              <select name="quantity" class="boot__quantity">
+                <option value="Qty">Qty</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+
+            <input type="submit" value="Add to cart">
 
           </form>
 
