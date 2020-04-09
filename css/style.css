@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.boot {
+    background: url('../images/background_nike.png') no-repeat;
+    padding: 109px 51px 100px 63px;
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.boot__container {
+    width: 686px;
+    height: 391px;
+    background-color: #202837;
+    border-radius: 10px;
+    box-shadow: 0 0 65px 0;
+    padding: 24px 21px;
+    position: relative;
+}
+
+.order__boot {
+    display: flex;
+}
+
+.image__boot__block {
+    margin-left: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image__boot {
+    display: block;
+    width: 329px;
+    height: 159px;
+}
+
+.bullets__boot {
+    margin-top: 60px;
+    display: flex;
+}
+
+input[type="radio"] {
+    width: 10px;
+    height: 10px;
+    display: none; 
+}
+
+.radio__label.first__bullet::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #96b92c;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+#first__bullet:checked + .first__bullet::before,
+#second__bullet:checked + .second__bullet::before,
+#third__bullet:checked + .third__bullet::before,
+#fourth__bullet:checked + .fourth__bullet::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-color: #303850;
+    border: 2px solid #858a92;  
+    margin-right: 9px;
+    display: inline-block; 
+}
+
+.radio__label.second__bullet::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.radio__label.third__bullet::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #d34d44;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.radio__label.fourth__bullet::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #85e6ee;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.name__boot {
+    color: #e6e6e6; 
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+}
+
+.description__boot {
+    color: #e6e6e6; 
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.28px;
+}
+
+.form__boot__block {
+    margin-left: 80px;
+}
+
+.checkboxes {
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+
+.gold__star__image {
+    width: 12px;
+    height: 12px;
+    display: block; 
+    margin-right: 3px;    
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    display: none; 
+}
+
+.checkbox__label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    margin-right: 3px;
+    display: block;   
+}
+
+.checkbox__label::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/gold_star.png');
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    margin-right: 3px;
+    display: block; 
+    position: absolute;
+    top: 0px;
+    visibility: hidden; 
+}
+
+#one__star:checked + .checkbox__label::after {
+    visibility: visible;
+}
+
+#two__stars:checked + .checkbox__label::after {
+    visibility: visible;
+}
+
+#three__stars:checked + .checkbox__label::after {
+    visibility: visible;
+}
+
+#four__stars:checked + .checkbox__label::after {
+    visibility: visible;
+}
+
+#five__stars:checked + .checkbox__label::after {
+    visibility: visible;
+}
+
+
+
+
+
