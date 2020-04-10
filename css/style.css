@@ -171,23 +171,37 @@ input[type="checkbox"] {
     visibility: hidden; 
 }
 
+.one__star__block,
+.two__stars__block,
+.three__stars__block,
+.four__stars__block,
+.five__stars__block {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+}
+
 #one__star:checked + .checkbox__label::after {
     visibility: visible;
 }
 
-#two__stars:checked + .checkbox__label::after {
+#two__stars:checked + .checkbox__label::after,
+#two__stars:checked ~ .one__star__block {
     visibility: visible;
 }
 
-#three__stars:checked + .checkbox__label::after {
+#three__stars:checked + .checkbox__label::after,
+#three__stars:checked ~ .two__stars__block {
     visibility: visible;
 }
 
-#four__stars:checked + .checkbox__label::after {
+#four__stars:checked + .checkbox__label::after,
+#four__stars:checked ~ .three__stars__block {
     visibility: visible;
 }
 
-#five__stars:checked + .checkbox__label::after {
+#five__stars:checked + .checkbox__label::after,
+#five__stars:checked ~ .four__stars__block {
     visibility: visible;
 }
 
@@ -206,8 +220,13 @@ option {
     background: #202837;
 }
 
-.size__quantity {
+.select__size__quantity__block {
+    display: flex;
     margin-bottom: 40px;
+}
+
+.select__size__block {
+  margin-right: 2px;
 }
 
 input[type="submit"] {
@@ -219,7 +238,6 @@ input[type="submit"] {
     background: #60656c;
     color: #e6e6e6;
 }
-
 
 
 
